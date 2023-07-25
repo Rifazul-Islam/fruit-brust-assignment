@@ -33,7 +33,7 @@
       theme: {
         extend: {
           colors: {
-            clifford: '#da373d',
+            'primary-color':'#F85559'
           }
         }
       }
@@ -42,8 +42,63 @@
 </head>
 <body class="font-lato">
     <!--Header section start here-->
-  <header>
-    <h1> Hello </h1>
+  <header class="container mx-auto">
+    
+    <!--Navbar section-->
+     <nav>
+        <div class="navbar lg:bg-primary-color py-5 rounded-full lg:px-10">
+            <div class="navbar-start">
+              <div class="dropdown">
+               
+                <ul tabindex="0" class="menu hidden dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                 
+                    <p> none</p>
+                </ul>
+              </div>
+             
+
+           <div class="hidden lg:flex">
+            <div class="flex justify-center items-center  list-none space-x-5 text-white font-semibold">
+                
+              <li><a>Home</a></li>
+              <li><a>About Us</a> </li>
+              <li><a>Shop</a> </li>
+              <li><a>All fruit</a></li>
+              
+
+         </div>
+           </div>
+            
+            </div>
+            <div class="navbar-center lg:flex">
+              <ul class="menu menu-horizontal px-1">
+
+                 <div class="flex justify-center items-center space-x-3 ">
+                    <img class="w-12" src="images/logo.png" alt="">
+                    <h2 class=" text-2xl lg:text-3xl font-bold text-black lg:text-white"> Fruit Burst</h2>
+                 </div>
+
+
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn rounded-full hidden lg:flex">
+                <div class="flex justify-center items-center ">
+                    <h5 class="pr-52 lowercase">Search here</h5>
+                    <p><i class="fa-solid fa-magnifying-glass"></i></p>
+                </div>
+              </a>
+              <label tabindex="0" class="lg:hidden pr-10 pl-40">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </label>
+
+
+
+            </div>
+          </div>
+     </nav>
+     
+    
   </header> 
   <!--Main section start here--> 
   <main></main>
